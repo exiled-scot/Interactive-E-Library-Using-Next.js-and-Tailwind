@@ -1,0 +1,24 @@
+.next/
+out/
+.cache/
+dist/
+
+# Node.js
+node_modules/
+
+# Build files
+build/
+public/
+
+# Miscellaneous
+*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
