@@ -9,8 +9,8 @@ const book = () => {
   const { title } = router.query;
   const book = data.find(elem => elem.title === title);
 
-  const rating = book.rating === 0 ? <ImSad className="w-7 h-7"/> : <><span className="text-yellow-700 dark:text-yellow-600">{book.rating}</span> out of 5</>;
-  const places = book.places === "N/A" ? <ImSad className="w-7 h-7"/> : <>Mentions <span className="text-blue-500 dark:text-blue-400">{book.places}</span></>
+  const rating = (book?.rating ?? 0) === 0 ? <ImSad className="w-7 h-7"/> : <><span className="text-yellow-700 dark:text-yellow-600">{book?.rating}</span> out of 5</>;
+  const places = book?.places === "N/A" ? <ImSad className="w-7 h-7"/> : <>Mentions <span className="text-blue-500 dark:text-blue-400">{book?.places}</span></>
 
   return (
     <>
@@ -24,23 +24,23 @@ const book = () => {
               <div className="object-contain h-auto w-4/5">
                 <div className="md:mt-10 mt-0">
                     <img
-                      src={book.img}
+                      src={book?.img}
                       alt='Book Cover'
                     />
                 </div>
               </div>
               <div className="flex justify-center text-center">
                 <div>
-                    <h2 className="text-sm font-semibold">{book.author}</h2>
-                    <h1 className="mt-1 font-bold text-3xl">{book.title}</h1>
-                    <h3 className="mt-3 text-sm">{book.genre}</h3>
-                    <p className="mt-10 font-normal ml-9">{book.overview}</p>
+                    <h2 className="text-sm font-semibold">{book?.author}</h2>
+                    <h1 className="mt-1 font-bold text-3xl">{book?.title}</h1>
+                    <h3 className="mt-3 text-sm">{book?.genre}</h3>
+                    <p className="mt-10 font-normal ml-9">{book?.overview}</p>
                     <div className="flex flex-col justify-space-between items-center">
-                        <p className="mt-2 ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">Published in: <span className='text-green-500'>{book.date}</span></p>
+                        <p className="mt-2 ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">Published in: <span className='text-green-500'>{book?.date}</span></p>
                         <p className="mt-2 ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{places}</p>
                         <p className="mt-2 ml-2 text-sm font-medium text-yellow-500 dark:text-yellow-400">{rating}</p>
                     </div>
-                    <h3 className="mt-5 font-semibold text-xl">{book.free ? "Free" : "Paid"}</h3>
+                    <h3 className="mt-5 font-semibold text-xl">{book?.free ? "Free" : "Paid"}</h3>
 
                     <div className="mt-4 ml-9">
                         <div className="flex gap-5 items-center justify-center">
