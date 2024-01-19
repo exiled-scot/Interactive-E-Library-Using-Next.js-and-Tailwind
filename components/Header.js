@@ -1,10 +1,12 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { HiSun, HiMoon } from "react-icons/hi";
+import SearchBooks from "./SearchBooks";
 
-const Header = () => {
+const Header = ({ searchString, handleSearch }) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     setMounted(true);
@@ -21,6 +23,15 @@ const Header = () => {
           <a href="" className="text-2xl my-4 mx-4 text-white">My Books</a>
           <a href="" className="text-2xl my-4 mx-4 text-white">Browse</a>
           <a href="" className="text-2xl my-4 mx-4 text-white">Community</a>
+        </div>
+        <div className="">
+          <input
+            type="text"
+            placeholder="Search books"
+            value={searchString}
+            onChange={handleSearch}
+            ref={inputRef}
+          />
         </div>
         <div className="flex justify-end items-center pr-6 text-gray-300">
           <div>
