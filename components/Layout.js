@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         {/* Header contents */}
       </header>
 
-      <main className="flex-grow">
+      <main className="flex-grow pb-16"> {/* pb-16 adds a padding-bottom of 16px */}
         {children}
       </main>
 
