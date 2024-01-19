@@ -15,7 +15,7 @@ const Header = () => {
       <div className="flex justify-between items-center">
         <div className="flex justify-start">
           <a href="#app">
-            <h3 className="border-4 border-white text-white p-4 text-2xl animate-show">MyReads</h3>
+            <h3 className="border-4 border-white text-white ml-2 p-2 text-2xl animate-show">MyReads</h3>
           </a>
           <a href="" className="text-2xl my-4 mx-4 text-white">Home</a>
           <a href="" className="text-2xl my-4 mx-4 text-white">My Books</a>
