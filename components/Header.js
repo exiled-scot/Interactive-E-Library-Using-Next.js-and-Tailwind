@@ -17,26 +17,24 @@ const Header = () => {
           <a href="#app">
             <h3 className="border-4 border-white text-white p-4 text-2xl animate-show">MyReads</h3>
           </a>
+          <a href="" className="text-2xl my-4 mx-4 text-white">Home</a>
+          <a href="" className="text-2xl my-4 mx-4 text-white">My Books</a>
+          <a href="" className="text-2xl my-4 mx-4 text-white">Browse</a>
+          <a href="" className="text-2xl my-4 mx-4 text-white">Community</a>
         </div>
-        <div className="flex justify-end items-center py-6 pr-6 text-gray-300">
-          <div className="mr-4">
-            <a href="" className="text-2xl mr-4">Home</a>
-            <a href="" className="text-2xl mr-4">My Books</a>
-            <a href="" className="text-2xl mr-4">Browse</a>
-            <a href="" className="text-2xl mr-4">Community</a>
-          </div>
+        <div className="flex justify-end items-center pr-6 text-gray-300">
           <div>
-            <button className="text-2xl mr-4">Log in</button>
-            <button className="text-2xl mr-4">Sign Up</button>
-            <div className="px-4 py-4 flex justify-end items-center" style={{ marginRight: `3.5rem` }}>
-              {mounted && (
-                theme === "dark" ? (
-                  <HiSun className="w-10 h-10 text-yellow-500" role="button" onClick={() => setTheme('light')} />
-                ) : (
-                  <HiMoon className="w-10 h-10 text-gray-900" role="button" onClick={() => setTheme('dark')} />
-                )
-              )}
-            </div>
+            <button className="text-2xl mx-4 mr-4 text-white">Log in</button>
+            <button className="text-2xl mx-4 mr-4 text-white">Sign Up</button>
+          </div>
+          <div className="px-4 py-4 flex justify-end items-center" style={{ marginRight: `3.5rem` }}>
+            {mounted && (
+              theme === "dark" ? (
+                <HiSun className="w-10 h-10 text-yellow-500" role="button" onClick={() => setTheme('light')} />
+              ) : (
+                <HiMoon className="w-10 h-10 text-gray-900" role="button" onClick={() => setTheme('dark')} />
+              )
+            )}
           </div>
         </div>
       </div>
