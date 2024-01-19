@@ -4,20 +4,21 @@ import Head from "next/head";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Head>
-        <title>MyReads</title>
-        <link rel="icon" href="/favicon.ico" />
+        {/* Head contents */}
       </Head>
 
-      <header class='h-16'>
-        <Header />
+      <header className="h-16">
+        {/* Header contents */}
       </header>
 
-      <main>{children}</main>
+      <main className="flex-grow">
+        {children}
+      </main>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
