@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>NextJS Project</title>
+        <title>MyReads</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
