@@ -7,7 +7,7 @@ const Books = ({ data, searchString }) => {
 
   return (
     <section className="justify-items-center auto-cols-fr" style={{gridGap: '.75em', padding: '.75em'}}>
-      <div className="flex flex-wrap justify-between gap-4">
+      <div className="flex flex-wrap gap-4">
         {
           data.map((book, index) => {
             if (checkCondition(book.title) || checkCondition(book.author)) {
