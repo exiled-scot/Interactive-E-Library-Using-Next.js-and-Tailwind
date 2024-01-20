@@ -14,7 +14,7 @@ const Header = ({ searchString, handleSearch }) => {
 
   return (
     <header className="fixed top-0 left-0 right-0 h-16 bg-black bg-opacity-30">
-      <div className="flex justify-between items-center">
+      <div className="mx-20 flex items-center">
         <div className="flex justify-start">
           <a href="#app">
             <h3 className="border-4 border-white text-white ml-2 p-2 text-2xl animate-show">MyReads</h3>

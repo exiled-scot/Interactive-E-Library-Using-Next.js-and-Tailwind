@@ -1,8 +1,10 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import { useTheme } from "next-themes";
 
 const Layout = ({ children }) => {
+  
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -10,7 +12,7 @@ const Layout = ({ children }) => {
       </Head>
 
       <header className="h-16">
-        {/* Header contents */}
+        <Header/>
       </header>
 
       <main className="flex-grow pb-16"> {/* pb-16 adds a padding-bottom of 16px */}
