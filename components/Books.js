@@ -6,7 +6,7 @@ const Books = ({ data, searchString }) => {
   }
 
   return (
-    <section className="justify-items-center auto-cols-fr" style={{gridGap: '.75em', padding: '.75em'}}>
+    <section className="mx-40 justify-items-center auto-cols-fr" style={{gridGap: '.75em', padding: '.75em'}}>
       <div className="flex flex-wrap gap-4">
         {
           data.map((book, index) => {
