@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const Book = ({ book }) => {
   const [imgError, setImgError] = useState(false);
+  const [showPopupDelayed, setShowPopupDelayed] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
   const handleImgError = () => {
@@ -9,12 +10,23 @@ const Book = ({ book }) => {
   };
 
   const handleMouseEnter = () => {
-    setShowPopup(true);
+    if (!imgError) {
+      setShowPopupDelayed(true);
+    }
   };
 
   const handleMouseLeave = () => {
+    setShowPopupDelayed(false);
     setShowPopup(false);
   };
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setShowPopup(showPopupDelayed && !imgError);
+    }, 800);
+
+    return () => clearTimeout(timeoutId);
+  }, [showPopupDelayed, imgError]);
 
   return (
     <div
