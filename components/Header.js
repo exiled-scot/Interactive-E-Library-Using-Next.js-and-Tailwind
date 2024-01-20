@@ -13,7 +13,7 @@ const Header = ({ searchString, handleSearch }) => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-black bg-opacity-30">
+    <header className="fixed top-0 left-0 right-0 h-16 bg-black bg-opacity-40 text-white-2">
       <div className="mx-20 flex items-center">
         <div className="flex justify-start">
           <a href="#app">
