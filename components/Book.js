@@ -1,6 +1,13 @@
 import { useState, useEffect } from 'react';
+import { useTheme } from "next-themes";
+
+const getCurrentTheme = () => {
+  const { theme } = useTheme();
+  return theme;
+};
 
 const Book = ({ book }) => {
+  const currentTheme = getCurrentTheme();
   const [imgError, setImgError] = useState(false); // State to track if there is an error loading the image
   const [showPopupDelayed, setShowPopupDelayed] = useState(false); // State to control delayed display of the popup
   const [showPopup, setShowPopup] = useState(false); // State to control the visibility of the popup
@@ -33,24 +40,24 @@ const Book = ({ book }) => {
 
   return (
     <div
-      className="border border-black bg-black relative"
+      className={`border border-black ${currentTheme === "dark" ? "bg-black" : "bg-white"} relative`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div className="relative">
         <a href={book.url}>
-          {!imgError && ( // Render the <img> element only if imgError is false
+          {!imgError && (
             <img
               className={`transform hover:scale-110 rounded-t-lg object-contain w-full h-full md:h-96 md:w-48 sm:h-48 sm:w-48`}
               src={book.img}
-              onError={handleImageError} // Handle the image loading error
+              onError={handleImageError}
               style={{ backgroundImage: 'none', objectFit: 'fill', display: 'block' }}
             />
           )}
         </a>
 
         {showPopup && (
-          <div className="fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 bg-white p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none" style={{ zIndex: 9999 }}>
+          <div className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"} text-gray-80 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none`} style={{ zIndex: 9999 }}>
             {/* Title Info */}
             <h6 className="mb-2 flex items-center gap-2 font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased">
               <span><a href={book.url}>{book.title}</a></span> •
@@ -60,7 +67,7 @@ const Book = ({ book }) => {
             </h6>
 
             {/* Description */}
-            <p className="block font-sans text-sm font-normal leading-normal text-gray-700 antialiased">
+            <p className="block font-sans text-sm font-normal leading-normal text-gray-80 antialiased">
               {book.overview}
             </p>
 
