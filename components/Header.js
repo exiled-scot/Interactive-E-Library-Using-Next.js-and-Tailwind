@@ -13,20 +13,27 @@ const Header = ({ searchString, handleSearch }) => {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 h-16 bg-black bg-opacity-40 text-white-2">
-      <div className="mx-20 flex items-center">
-        <div className="flex justify-start">
-          <a href="#app">
-            <h3 className="border-4 border-white text-white ml-2 p-2 text-2xl animate-show">MyReads</h3>
-          </a>
-          <a href="" className="text-2xl my-4 mx-4 text-white">Home</a>
-          <a href="" className="text-2xl my-4 mx-4 text-white">My Books</a>
-          <a href="" className="text-2xl my-4 mx-4 text-white">Browse</a>
-          <a href="" className="text-2xl my-4 mx-4 text-white">Community</a>
-        </div>
 
-        <div className="max-w-md mx-auto flex justify-center">
-          {mounted && theme !== "dark" ? (
+    <header>
+      <nav class="bg-gray-800 opacity-70">
+        <div class="container mx-auto py-4 flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-gray-50 border-4 border-white ml-2 p-2 text-2xl animate-show">MyReads</h1>
+          <div class="flex space-x-10">
+            <div class="flex items-center space-x-2">
+              <span>          <a href="" className="text-2xl my-4 mx-4 text-white">Home</a></span></div>
+
+            <div class="flex items-center space-x-2">
+              <span>          <a href="" className="text-2xl my-4 mx-4 text-white">My Books</a></span></div>
+
+            <div class="flex items-center space-x-2">
+              <span>          <a href="" className="text-2xl my-4 mx-4 text-white">Browse</a></span></div>
+
+            <div class="flex items-center space-x-2">
+              <span>          <a href="" className="text-2xl my-4 mx-4 text-white">Community</a></span></div>
+
+
+          </div>
+          <div className="max-w-md mx-auto flex justify-center">
             <div className="bg-white relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
               <div className="grid place-items-center h-full w-20 text-gray-300">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -35,41 +42,18 @@ const Header = ({ searchString, handleSearch }) => {
               </div>
 
               <input
+
                 type="text"
                 placeholder="Search books"
                 value={searchString}
                 onChange={handleSearch}
                 ref={inputRef}
-                className="pl-4 outline-none"
+                className="bg-white text-black pl-4 outline-none"
                 style={{ width: "100vw", border: "none" }}
               />
             </div>
-          ) : (
-            <div className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
-              <div className="grid place-items-center h-full w-20 text-gray-300">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-
-              <input
-                type="text"
-                placeholder="Search books"
-                value={searchString}
-                onChange={handleSearch}
-                ref={inputRef}
-                className="bg-white pl-4 outline-none"
-                style={{ width: "100vw", border: "none" }}
-              />
-            </div>
-          )}
-        </div>
-
-        <div className="flex justify-end items-center pr-6 text-gray-300">
-          <div>
-            <button className="text-2xl mx-4 mr-4 text-white">Log in</button>
-            <button className="text-2xl mx-4 mr-4 text-white">Sign Up</button>
           </div>
+
           <div className="px-4 py-4 flex justify-end items-center" style={{ marginRight: `3.5rem` }}>
             {mounted && (
               theme === "dark" ? (
@@ -79,9 +63,15 @@ const Header = ({ searchString, handleSearch }) => {
               )
             )}
           </div>
+
         </div>
-      </div>
+      </nav>
+
+
+
     </header>
+
+
   );
 };
 

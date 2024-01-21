@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
         {/* Head contents */}
       </Head>
 
-      <header className="h-20">
+      <header className="pb-4">
         <Header/>
       </header>
 
