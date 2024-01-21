@@ -45,7 +45,7 @@ const Book = ({ book }) => {
       onMouseLeave={handleMouseLeave}
     >
       <div className="relative">
-        <a href={book.url}>
+        <a href={`/book/${encodeURIComponent(book.title)}`}>
           {!imgError && (
             <img
               className={`transform hover:scale-110 rounded-t-lg object-contain w-full h-full md:h-96 md:w-48 sm:h-48 sm:w-48`}
