@@ -11,9 +11,6 @@ const Layout = ({ children }) => {
         {/* Head contents */}
       </Head>
 
-      <header className="pb-4">
-        <Header/>
-      </header>
 
       <main className="flex-grow pb-16"> {/* pb-16 adds a padding-bottom of 16px */}
         {children}
