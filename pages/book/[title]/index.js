@@ -44,7 +44,7 @@ const Book = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center leading-[2]">
         <div className="flex justify-start items-center max-w-4xl md:h-full">
           <div className="object-contain h-auto w-4/5">
             <div className="md:mt-10 mt-0">
@@ -58,10 +58,10 @@ const Book = () => {
             <h2 className="text-sm font-semibold mb-2 text-left">
               {book?.author}
             </h2>
+            <br/>
             <div className="flex gap-1 items-center justify-start mb-2">
               {rating}
             </div>
-            <br/>
             <p className="text-sm font-medium mb-2 text-left">
               {book?.overview}
             </p>
