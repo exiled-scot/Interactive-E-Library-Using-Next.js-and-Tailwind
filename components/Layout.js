@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
-import { useTheme } from "next-themes";
 
 const Layout = ({ children }) => {
   
