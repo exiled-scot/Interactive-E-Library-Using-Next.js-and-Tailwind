@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { HiSun, HiMoon } from "react-icons/hi";
-import SearchBooks from "./SearchBooks";
 import SearchBar from "./SearchBar";
 
 const Header = ({ searchString, handleSearch }) => {
