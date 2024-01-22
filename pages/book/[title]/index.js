@@ -68,10 +68,10 @@ const Book = () => {
               Published in: {book?.date}
             </p>
             <p className="text-sm font-medium mb-2 text-left">
-              Genre: {book?.genre}
+              Genre: {book?.genre.join(", ")}
             </p>
             <p className="text-sm font-medium text-blue-500 dark:text-blue-400 text-left">
-              Tags: {book?.places}
+              Tags: {book?.tags.join(", ")}
             </p>
             <div className="mt-6 about-author">
               <h1 className="font-bold text-2xl">
