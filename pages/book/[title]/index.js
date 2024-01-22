@@ -58,14 +58,14 @@ const Book = () => {
             <h2 className="text-sm font-semibold mb-2 text-left">
               {book?.author}
             </h2>
-            <br/>
+            <br />
             <div className="flex gap-1 items-center justify-start mb-2">
               {rating}
             </div>
             <p className="text-sm font-medium mb-2 text-left">
               {book?.overview}
             </p>
-            <br/>
+            <br />
 
             <p className="text-sm font-medium mb-2 text-left">
               Published in: {book?.date}
@@ -76,24 +76,22 @@ const Book = () => {
             <p className="text-sm font-medium mb-2 text-left">
               Tags: {book?.tags.join(", ")}
             </p>
-            <br/>
+            <br />
             <div className="mt-6 about-author">
               <h1 className="font-bold text-2xl">
                 About the Author
               </h1>
-              <div className="flex items-start">
-                <div className="w-7 h-7 rounded-full bg-red-500 flex items-center justify-center">
+
+              <div className="mt-4 flex items-center">
+                <div className="w-20 h-20 rounded-full bg-red-500 flex items-center justify-center">
                   <span className="text-white font-bold">
                     {book?.author[0]}
                   </span>
                 </div>
-                <h3 className="ml-2 text-lg font-semibold">
+                <h3 className="ml-6 mt-1.5 text-lg font-semibold">
                   {book?.author}
                 </h3>
               </div>
-              <p className="mt-3">
-                {book?.authorBlurb}
-              </p>
             </div>
           </div>
         </div>
