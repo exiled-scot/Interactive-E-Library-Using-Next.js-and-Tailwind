@@ -1,16 +1,41 @@
 import data from '../../../data/books.json';
 import Head from 'next/head';
 import Link from 'next/link';
-import { ImSad } from "react-icons/im";
+import { FaStar } from "react-icons/fa";
 import { useRouter } from 'next/router';
 
-const book = () => {
+const Book = () => {
   const router = useRouter();
   const { title } = router.query;
   const book = data.find(elem => elem.title === title);
 
-  const rating = (book?.rating ?? 0) === 0 ? <ImSad className="w-7 h-7"/> : <><span className="text-yellow-700 dark:text-yellow-600">{book?.rating}</span> out of 5</>;
-  const places = book?.places === "N/A" ? <ImSad className="w-7 h-7"/> : <>Mentions <span className="text-blue-500 dark:text-blue-400">{book?.places}</span></>
+  const rating = (book?.rating ?? 0) === 0 ? (
+    <>
+      {Array(5)
+        .fill("")
+        .map((_, index) => (
+          <span
+            key={index}
+            className={`text-4xl text-yellow-700 dark:text-yellow-600 star-empty`}
+          >
+            ★
+          </span>
+        ))}
+    </>
+  ) : (
+    <>
+      {Array(5)
+        .fill("")
+        .map((_, index) => (
+          <span
+            key={index}
+            className={`text-yellow-700 dark:text-yellow-600 star-filled`}
+          >
+            ★
+          </span>
+        ))}
+    </>
+  );
 
   return (
     <>
@@ -20,47 +45,57 @@ const book = () => {
       </Head>
 
       <div className="flex justify-center">
-        <div className="flex justify-center items-center max-w-4xl md:h-full">
-              <div className="object-contain h-auto w-4/5">
-                <div className="md:mt-10 mt-0">
-                    <img
-                      src={book?.img}
-                      alt='Book Cover'
-                    />
-                </div>
-              </div>
-              <div className="flex justify-center text-center">
-                <div>
-                    <h2 className="text-sm font-semibold">{book?.author}</h2>
-                    <h1 className="mt-1 font-bold text-3xl">{book?.title}</h1>
-                    <h3 className="mt-3 text-sm">{book?.genre}</h3>
-                    <p className="mt-10 font-normal ml-9">{book?.overview}</p>
-                    <div className="flex flex-col justify-space-between items-center">
-                        <p className="mt-2 ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">Published in: <span className='text-green-500'>{book?.date}</span></p>
-                        <p className="mt-2 ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">{places}</p>
-                        <p className="mt-2 ml-2 text-sm font-medium text-yellow-500 dark:text-yellow-400">{rating}</p>
-                    </div>
-                    <h3 className="mt-5 font-semibold text-xl">{book?.free ? "Free" : "Paid"}</h3>
-
-                    <div className="mt-4 ml-9">
-                        <div className="flex gap-5 items-center justify-center">
-                            <div className='py-2 px-2 rounded font-bold border border-solid border-1 border-gray-500 bg-blue-600 hover:bg-blue-700 text-white'>
-                                <Link href='/'>Go Back</Link>
-                            </div>
-                            <button
-                                onClick={() => window.open(book.url)}
-                                className="w-38 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                            >
-                                Visit Website
-                            </button>
-                        </div>
-                    </div>
-                </div>
+        <div className="flex justify-start items-center max-w-4xl md:h-full">
+          <div className="object-contain h-auto w-4/5">
+            <div className="md:mt-10 mt-0">
+              <img src={book?.img} alt='Book Cover' />
             </div>
+          </div>
+          <div className="flex flex-col justify-center text-left">
+            <h1 className="font-bold text-3xl mb-2 text-left">
+              {book?.title}
+            </h1>
+            <h2 className="text-sm font-semibold mb-2 text-left">
+              {book?.author}
+            </h2>
+            <div className="flex gap-1 items-center justify-start mb-2">
+              {rating}
+            </div>
+            <p className="text-sm font-medium mb-2 text-left">
+              {book?.overview}
+            </p>
+            <p className="text-sm font-medium text-gray-500 dark:text-gray-400 text-left">
+              Published in: {book?.date}
+            </p>
+            <p className="text-sm font-medium mb-2 text-left">
+              Genre: {book?.genre}
+            </p>
+            <p className="text-sm font-medium text-blue-500 dark:text-blue-400 text-left">
+              Tags: {book?.places}
+            </p>
+            <div className="mt-6 about-author">
+              <h1 className="font-bold text-2xl">
+                About the Author
+              </h1>
+              <div className="flex items-start">
+                <div className="w-7 h-7 rounded-full bg-red-500 flex items-center justify-center">
+                  <span className="text-white font-bold">
+                    {book?.author[0]}
+                  </span>
+                </div>
+                <h3 className="ml-2 text-lg font-semibold">
+                  {book?.author}
+                </h3>
+              </div>
+              <p className="mt-3">
+                {book?.authorBlurb}
+              </p>
+            </div>
+          </div>
         </div>
-     </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default book;
+export default Book;
