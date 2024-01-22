@@ -61,18 +61,22 @@ const Book = () => {
             <div className="flex gap-1 items-center justify-start mb-2">
               {rating}
             </div>
+            <br/>
             <p className="text-sm font-medium mb-2 text-left">
               {book?.overview}
             </p>
-            <p className="text-sm font-medium text-gray-500 dark:text-gray-400 text-left">
+            <br/>
+
+            <p className="text-sm font-medium mb-2 text-left">
               Published in: {book?.date}
             </p>
             <p className="text-sm font-medium mb-2 text-left">
               Genre: {book?.genre.join(", ")}
             </p>
-            <p className="text-sm font-medium text-blue-500 dark:text-blue-400 text-left">
+            <p className="text-sm font-medium mb-2 text-left">
               Tags: {book?.tags.join(", ")}
             </p>
+            <br/>
             <div className="mt-6 about-author">
               <h1 className="font-bold text-2xl">
                 About the Author
