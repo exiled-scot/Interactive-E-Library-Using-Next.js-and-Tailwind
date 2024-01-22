@@ -51,7 +51,7 @@ const Book = () => {
       <div className="flex justify-center">
         <div className="flex justify-start items-center max-w-4xl md:h-full">
           <div className="object-contain h-auto w-4/5">
-            <div className="md:mt-10 mt-0">
+            <div className="md:mt-10">
               <img src={book?.img} alt='Book Cover' />
             </div>
           </div>
@@ -59,24 +59,24 @@ const Book = () => {
             <h1 className="font-bold text-3xl md:text-4xl mb-2 text-left">
               {book?.title}
             </h1>
-            <h2 className="md: text text-sm font-semibold mb-2 text-left">
+            <h2 className="font-semibold mb-2 text-left">
               {book?.author}
             </h2>
 
             <StarRating rating={book?.rating} />
 
-            <p className="text-sm font-medium mb-2 text-left">
+            <p className="font-medium mb-2 text-left">
               {book?.overview}
             </p>
             <br />
 
-            <p className="text-sm font-medium mb-2 text-left">
+            <p className="font-medium mb-2 text-left">
               Published in: {book?.date}
             </p>
-            <p className="text-sm font-medium mb-2 text-left">
+            <p className="font-medium mb-2 text-left">
               Genre: {book?.genre.join(", ")}
             </p>
-            <p className="text-sm font-medium mb-2 text-left">
+            <p className="font-medium mb-2 text-left">
               Tags: {book?.tags.join(", ")}
             </p>
             <br />

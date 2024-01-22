@@ -3,7 +3,6 @@ import Footer from "./Footer";
 import Head from "next/head";
 
 const Layout = ({ children }) => {
-
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
@@ -12,11 +11,28 @@ const Layout = ({ children }) => {
 
       <Header />
 
-      <main className="flex-grow pb-16"> {/* pb-16 adds a padding-bottom of 16px */}
+      <main className="flex-grow pb-16">
         {children}
       </main>
 
-      <Footer />
+      <footer className="mt-auto">
+        <Footer />
+      </footer>
+
+      <style jsx>{`
+        html,
+        body {
+          min-height: 100%;
+        }
+
+        .flex-grow {
+          flex-grow: 1;
+        }
+
+        .mt-auto {
+          margin-top: auto;
+        }
+      `}</style>
     </div>
   );
 };
