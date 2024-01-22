@@ -1,9 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { useTheme } from "next-themes";
 import { HiSun, HiMoon } from "react-icons/hi";
-import SearchBar from "./SearchBar";
 
-const Header = ({ searchString, handleSearch }) => {
+const Header = () => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -33,12 +32,9 @@ const Header = ({ searchString, handleSearch }) => {
 
           </div>
           <div className="max-w-md mx-auto flex justify-center">
-            <div>
-              <SearchBar searchString={searchString} handleSearch={handleSearch} />
-            </div>
           </div>
 
-          <div className="px-4 py-4 flex justify-end items-center" style={{ marginRight: `3.5rem` }}>
+          <div className="absolute right-0 z-50" style={{ marginRight: `3.5rem` }}>
             {mounted && (
               theme === "dark" ? (
                 <HiSun className="w-10 h-10 text-yellow-500" role="button" onClick={() => setTheme('light')} />

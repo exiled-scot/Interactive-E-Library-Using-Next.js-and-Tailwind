@@ -4,7 +4,7 @@ const SearchBar = ({ searchString, handleSearch }) => {
   const inputRef = useRef(null);
 
   return (
-    <div className="max-w-md mx-auto flex justify-center">
+    <div className="absolute right-12 max-w-sm mx-auto flex justify-center">
       <div className="bg-white relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden">
         <div className="grid place-items-center h-full w-20 text-gray-300">
           <svg
