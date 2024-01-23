@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <>
-      <div class="absolute top-5 right-20 z-50">
+      <div className="hidden sm:block absolute top-5 right-20 z-50">
         <SearchBar searchString={searchString} handleSearch={handleSearch} />
       </div>
       <Books data={data} searchString={searchString} />

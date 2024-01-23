@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
 
       <Header />
 
-      <main className="flex-grow pb-16">
+      <main className="flex-grow pb-16 justify-center">
         {children}
       </main>
 
