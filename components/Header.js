@@ -17,7 +17,7 @@ const Header = () => {
           <h1 className="text-2xl font-bold text-gray-50 border-4 border-white ml-2 p-2 text-2xl animate-show">
             MyReads
           </h1>
-          <div className="flex space-x-10">
+          <div className="pl-10 flex space-x-10">
             <div className="flex items-center space-x-2">
               <a href="" className="text-2xl my-4 mx-4 text-white">
                 Home
