@@ -4,7 +4,7 @@ import Head from "next/head";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen min-w-full overflow-x-hidden">
       <Head>
         {/* Head contents */}
       </Head>
@@ -18,21 +18,6 @@ const Layout = ({ children }) => {
       <footer className="mt-auto">
         <Footer />
       </footer>
-
-      <style jsx>{`
-        html,
-        body {
-          min-height: 100%;
-        }
-
-        .flex-grow {
-          flex-grow: 1;
-        }
-
-        .mt-auto {
-          margin-top: auto;
-        }
-      `}</style>
     </div>
   );
 };
