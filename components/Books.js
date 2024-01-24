@@ -24,7 +24,7 @@ const Books = ({ data, searchString }) => {
 
   return (
     <section
-      className={`overflow-auto justify-items-center auto-cols-fr${isLargeScreen ? ' mx-40' : ''}`}
+      className={`mt-auto overflow-auto justify-items-center auto-cols-fr${isLargeScreen ? ' mx-40' : ''}`}
       style={{
         gridGap: '.75em',
         padding: '.75em',
@@ -40,7 +40,7 @@ const Books = ({ data, searchString }) => {
         },
       }}
     >
-      <div className="flex flex-wrap gap-4">
+      <div className="ml-8 flex flex-wrap gap-4">
         {
           data.map((book, index) => {
             if (checkCondition(book.title) || checkCondition(book.author)) {
