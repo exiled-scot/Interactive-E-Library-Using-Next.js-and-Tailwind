@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import Books from '../components/Books';
 import data from '../data/books.json';
-import Header from '../components/Header';
 import SearchBar from '../components/SearchBar';
 
 const Home = () => {
