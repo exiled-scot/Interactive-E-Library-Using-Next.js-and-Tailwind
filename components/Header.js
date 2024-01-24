@@ -14,7 +14,7 @@ const Header = () => {
     <header>
       <nav className="bg-gray-800 opacity-70">
         <div className="container mx-auto px-8 py-4 flex flex-col items-center md:flex-row md:justify-between">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-50 border-b-4 border-white ml-2 p-2 animate-show">
+          <h1 className="text-2xl font-bold border-4 border-white ml-2 p-2 text-2xl animate-show text-gray-50 mr-4">
             MyReads
           </h1>
           <div className="md:pl-10 flex flex-wrap justify-center md:justify-start space-x-10">
