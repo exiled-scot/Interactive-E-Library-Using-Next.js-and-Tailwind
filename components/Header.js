@@ -13,7 +13,7 @@ const Header = () => {
   return (
     <header>
       <nav className="bg-gray-800 opacity-70">
-        <div className="sm:mx-40 container mx-auto px-8 py-4 flex flex-col items-center md:flex-row md:justify-between">
+        <div className="md:mx-40 container px-8 py-4 flex flex-col items-center md:flex-row md:justify-between">
           <h1 className="text-2xl font-bold border-4 border-white ml-2 p-2 text-2xl animate-show text-gray-50 mr-4">
             MyReads
           </h1>
