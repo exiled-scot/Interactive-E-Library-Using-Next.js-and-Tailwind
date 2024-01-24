@@ -32,10 +32,10 @@ const Footer = () => {
           <div className="mb-4 sm:mb-0">
             <h3 className="text-left text-lg mb-2">CONNECT</h3>
             <ul className="text-left text-sm">
-              <li><a href="#">Goodreads on Facebook</a></li>
-              <li><a href="#">Goodreads on Twitter</a></li>
-              <li><a href="#">Goodreads on Instagram</a></li>
-              <li><a href="#">Goodreads on LinkedIn</a></li>
+              <li><a href="#">MyReads on Facebook</a></li>
+              <li><a href="#">MyReads on Twitter</a></li>
+              <li><a href="#">MyReads on Instagram</a></li>
+              <li><a href="#">MyReads on LinkedIn</a></li>
             </ul>
           </div>
 
