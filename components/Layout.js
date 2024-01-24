@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
+import Sidebar from "./Sidebar";
 
 const Layout = ({ children }) => {
   return (
@@ -11,8 +12,18 @@ const Layout = ({ children }) => {
 
       <Header />
 
-      <main className="flex-grow pb-16 justify-center">
-        {children}
+      <main className="mt-8 flex-grow pb-16">
+        <div className="flex flex-wrap">
+          <div className="w-full sm:w-auto">
+            {/* Render content */}
+            {children}
+          </div>
+          
+          {/* Render the sidebar */}
+          <div className="w-full sm:w-auto">
+            <Sidebar className="w-64" />
+          </div>
+        </div>
       </main>
 
       <footer className="mt-auto">
