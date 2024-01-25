@@ -2,6 +2,8 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Head from "next/head";
 import Sidebar from "./Sidebar";
+import data from '../data/sidebar.json';
+
 
 const Layout = ({ children }) => {
   return (
@@ -21,7 +23,7 @@ const Layout = ({ children }) => {
           
           {/* Render the sidebar */}
           <div className="w-full xl:w-1/6 xl:px-4">
-            <Sidebar className="w-full" />
+            <Sidebar data={data} className="w-full" />
           </div>
         </div>
       </main>

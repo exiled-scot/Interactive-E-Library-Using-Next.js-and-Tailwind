@@ -1,0 +1,52 @@
+{
+  "title": "News & Interviews",
+  "sections": [
+    {
+      "title": "Readers' Most Anticipated Books of January",
+      "content": [
+        ""],
+      "likes": 172,
+      "comments": 40
+    },
+    {
+      "title": "Love lists?",
+      "content": [
+        "The Help by Kathryn Stockett",
+        "The Kite Runner by Khaled Hosseini",
+        "Water for Elephants by Sara Gruen",
+        "The Book Thief by Markus Zusak"
+      ]
+    },
+    {
+      "title": "Best for Book Clubs",
+      "content": [
+        "The Girl with the Dragon Tattoo by Stieg Larsson",
+        "And Then There Were None by Agatha Christie",
+        "Angels & Demons by Dan Brown",
+        "Rebecca by Daphne du Maurier"
+      ],
+      "bookCount": 11978,
+      "voterCount": 15895
+    },
+    {
+      "title": "Best Crime & Mystery Books",
+      "content": [
+        "To Kill a Mockingbird by Harper Lee",
+        "1984 by George Orwell",
+        "The Great Gatsby by F. Scott Fitzgerald",
+        "Harry Potter and the Sorcerer's Stone by J.K. Rowling"
+      ],
+      "bookCount": 7046,
+      "voterCount": 15481
+    },
+    {
+      "title": "Best Books of the 20th Century",
+      "content": [
+        "More book lists"
+      ],
+      "bookCount": 7706,
+      "voterCount": 50874
+    }
+  ],
+  "promotionText": "Are you an author or a publisher? Gain access to a massive audience of book lovers. Goodreads is a great place to promote your books."
+}
