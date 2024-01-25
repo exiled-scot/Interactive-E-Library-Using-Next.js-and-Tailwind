@@ -14,14 +14,14 @@ const Layout = ({ children }) => {
 
       <main className="mt-8 flex-grow pb-16">
         <div className="flex flex-wrap">
-          <div className="w-full sm:w-auto">
-            {/* Render content */}
+          {/* Render content */}
+          <div className="w-full xl:w-5/6">
             {children}
           </div>
           
           {/* Render the sidebar */}
-          <div className="w-full sm:w-auto">
-            <Sidebar className="w-64" />
+          <div className="w-full xl:w-1/6 xl:px-4">
+            <Sidebar className="w-full" />
           </div>
         </div>
       </main>
