@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import { HiSun, HiMoon } from "react-icons/hi";
+import DropdownMenu from "./DropdownMenu";
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
@@ -10,11 +11,17 @@ const Header = () => {
     setMounted(true);
   }, []);
 
+  const links = [
+    { name: "Link #1", url: "#" },
+    { name: "Link #2", url: "#" },
+    { name: "Link #3", url: "#" },
+  ];
+
   return (
     <header>
       <nav className="bg-gray-800 opacity-70">
         <div className="md:mx-40 container px-8 py-4 flex flex-col items-center md:flex-row md:justify-between">
-          <h1 className="text-2xl font-bold border-4 border-white ml-2 p-2 text-2xl animate-show text-gray-50 mr-4">
+          <h1 className="text-2xl font-bold border-4 border-white ml-2 p-2 animate-show text-gray-50 mr-4">
             MyReads
           </h1>
           <div className="md:pl-10 flex flex-wrap justify-center md:justify-start space-x-10">
@@ -33,11 +40,7 @@ const Header = () => {
                 Browse
               </a>
             </div>
-            <div className="flex items-center space-x-2">
-              <a href="/" className="text-lg md:text-2xl my-4 mx-4 text-white">
-                Community
-              </a>
-            </div>
+            <DropdownMenu title="Community" links={links}/>
           </div>
           <div className="max-w-md mx-auto flex justify-center">
             {/* Search bar code goes here */}
