@@ -2,78 +2,302 @@
   {
     "title": "The Water Knife",
     "author": "Paolo Bacigalupi",
-    "genre": ["Science Fiction", "Dystopia"],
+    "genre": [
+      "Science Fiction",
+      "Dystopia"
+    ],
     "overview": "In a future where water is scarce and controlled by corrupt figures, three individuals fight for their own survival and for others.",
     "rating": 4.5,
     "date": 2015,
-    "tags": ["Southwestern United States"],
+    "tags": [
+      "Southwestern United States"
+    ],
     "img": "https://ia802607.us.archive.org/view_archive.php?archive=/31/items/l_covers_0010/l_covers_0010_55.zip&file=0010555079-L.jpg",
     "url": "https://openlibrary.org/works/OL17849707W/The_Water_Knife?edition=key%3A/books/OL29128049M"
   },
   {
     "title": "The Road",
     "author": "Cormac McCarthy",
-    "genre": ["Post-Apocalyptic Fiction"],
+    "genre": [
+      "Post-Apocalyptic Fiction"
+    ],
     "overview": "A father and son traverse a landscape blasted by an unspecified cataclysm that has destroyed most of civilization.",
     "rating": 4.2,
     "date": 2006,
-    "tags": ["United States"],
+    "tags": [
+      "United States"
+    ],
     "img": "https://ia802607.us.archive.org/view_archive.php?archive=/31/items/l_covers_0010/l_covers_0010_69.zip&file=0010695975-L.jpg",
     "url": "https://openlibrary.org/works/OL40873W/The_Road?edition=key%3A/books/OL32029168M"
   },
   {
     "title": "Parable of the Sower",
     "author": "Octavia E. Butler",
-    "genre": ["Dystopian Fiction"],
+    "genre": [
+      "Dystopian Fiction"
+    ],
     "overview": "In a future where society has collapsed due to climate change and wealth inequality, a young woman creates her own religion in hopes of saving humanity.",
     "rating": 4.7,
     "date": 1993,
-    "tags": ["United States"],
+    "tags": [
+      "United States"
+    ],
     "img": "https://ia800309.us.archive.org/view_archive.php?archive=/11/items/olcovers28/olcovers28-L.zip&file=288067-L.jpg",
     "url": "https://openlibrary.org/works/OL35623W/Parable_of_the_sower"
   },
   {
     "title": "The Year of the Flood",
     "author": "Margaret Atwood",
-    "genre": ["Dystopian Fiction", "Speculative Fiction"],
+    "genre": [
+      "Dystopian Fiction",
+      "Speculative Fiction"
+    ],
     "overview": "Set in a future world devastated by a man-made plague, this novel tells the story of a religious sect, the God's Gardeners, who predicted the disaster and are now trying to recover.",
     "rating": 4.8,
     "date": 2009,
-    "tags": ["Dystopian Future Setting"],
+    "tags": [
+      "Dystopian Future Setting"
+    ],
     "img": "https://ia601205.us.archive.org/view_archive.php?archive=/5/items/olcovers679/olcovers679-L.zip&file=6798135-L.jpg",
     "url": "https://openlibrary.org/works/OL675774W/The_Year_of_the_Flood?edition=key%3A/books/OL24744458M"
   },
   {
     "title": "1984",
     "author": "George Orwell",
-    "genre": ["Political Fiction", "Social Science Fiction"],
+    "genre": [
+      "Political Fiction",
+      "Social Science Fiction"
+    ],
     "overview": "A social critique of totalitarianism and authoritarianism implemented by government bureaucracy in the historic year of 1984.",
     "rating": 4.9,
     "date": 1949,
-    "tags": ["London, in the state named 'Oceania'."],
+    "tags": [
+      "London, in the state named 'Oceania'."
+    ],
     "img": "https://ia804703.us.archive.org/view_archive.php?archive=/9/items/l_covers_0012/l_covers_0012_52.zip&file=0012525678-L.jpg",
     "url": "https://openlibrary.org/works/OL1168083W/Nineteen_Eighty-Four"
   },
   {
     "title": "Foundation",
     "author": "Isaac Asimov",
-    "genre": ["Science Fiction"],
+    "genre": [
+      "Science Fiction"
+    ],
     "overview": "A mathematician who has developed a concept of psychohistory, uses it to foresee the future and the eventual fall of the Galactic Empire.",
     "rating": 4.6,
     "date": 1951,
-    "tags": ["Galactic Empire, a future science fiction empire."],
+    "tags": [
+      "Galactic Empire, a future science fiction empire."
+    ],
     "img": "https://covers.openlibrary.org/b/id/7887525-L.jpg",
     "url": "https://ia804703.us.archive.org/view_archive.php?archive=/9/items/l_covers_0012/l_covers_0012_52.zip&file=0012525678-L.jpg"
   },
   {
     "title": "I, Robot",
     "author": "Isaac Asimov",
-    "genre": ["Science Fiction"],
+    "genre": [
+      "Science Fiction"
+    ],
     "overview": "A collection of nine short stories sharing common theme of interaction between humans and robots and the ethical implications of it.",
     "rating": 4.3,
     "date": 1950,
-    "tags": ["Earth and Outer space."],
+    "tags": [
+      "Earth and Outer space."
+    ],
     "img": "https://ia800507.us.archive.org/view_archive.php?archive=/8/items/l_covers_0009/l_covers_0009_30.zip&file=0009302128-L.jpg",
     "url": "https://openlibrary.org/works/OL46241W/I_Robot"
+  },
+  {
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "genre": [
+      "Drama",
+      "Historical Fiction"
+    ],
+    "overview": "Set in 1960s Mississippi, this novel follows the lives of black maids working in white households and their experiences of racial discrimination and prejudice. A young white woman, Skeeter, decides to write a book about their stories, risking her reputation and friendships.",
+    "rating": 4.5,
+    "date": 2009,
+    "tags": [
+      "Civil Rights Movement",
+      "Race Relations"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/8387264-L.jpg",
+    "url": "https://openlibrary.org/works/OL11999891W/The_Help?edition=key%3A/books/OL24187776M"
+  },
+  {
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "genre": [
+      "Fiction",
+      "Drama"
+    ],
+    "overview": "Set in Afghanistan, this novel tells the story of Amir, a young boy from Kabul, and his journey of redemption. It explores themes of friendship, guilt, and the impact of war on individuals and society.",
+    "rating": 4.3,
+    "date": 2003,
+    "tags": [
+      "Afghan Culture",
+      "Father-Son Relationship"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/9248224-L.jpg",
+    "url": "https://openlibrary.org/works/OL5781992W/The_Kite_Runner?edition=key%3A/books/OL23273999M"
+  },
+  {
+    "title": "Water for Elephants",
+    "author": "Sara Gruen",
+    "genre": [
+      "Historical Fiction",
+      "Romance"
+    ],
+    "overview": "This novel follows the story of Jacob Jankowski, a young man who joins a traveling circus during the Great Depression. It explores the complex relationships between circus performers, including a forbidden love affair and the challenges of surviving in a harsh era.",
+    "rating": 4.1,
+    "date": 2006,
+    "tags": [
+      "1930s",
+      "Circus Life"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/474-L.jpg",
+    "url": "https://openlibrary.org/works/OL5813796W/Water_for_Elephants?edition=key%3A/books/OL9209628M"
+  },
+  {
+    "title": "The Book Thief",
+    "author": "Markus Zusak",
+    "genre": [
+      "Historical Fiction",
+      "War Fiction"
+    ],
+    "overview": "Set in Nazi Germany during World War II, this novel narrated by Death follows the story of Liesel Meminger, a young girl who finds solace in stealing books and sharing them with others. It explores the power of words and the resilience of the human spirit.",
+    "rating": 4.4,
+    "date": 2005,
+    "tags": [
+      "World War II",
+      "Books and Reading"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/11473592-L.jpg",
+    "url": "https://openlibrary.org/works/OL5819456W/The_Book_Thief?edition=key%3A/books/OL16514196M"
+  },
+  {
+    "title": "The Girl with the Dragon Tattoo",
+    "author": "Stieg Larsson",
+    "genre": [
+      "Mystery",
+      "Thriller"
+    ],
+    "overview": "This psychological thriller follows journalist Mikael Blomkvist and hacker Lisbeth Salander as they investigate a decades-old disappearance of a wealthy industrialist's niece. It delves into themes of corruption, violence, and the dark secrets of the Swedish elites.",
+    "rating": 4.2,
+    "date": 2005,
+    "tags": [
+      "Crime",
+      "Journalism",
+      "Cybersecurity"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/11005892-L.jpg",
+    "url": "https://openlibrary.org/works/OL24433230W/The_Girl_with_the_Dragon_Tattoo?edition=key%3A/books/OL32362183M"
+  },
+  {
+    "title": "And Then There Were None",
+    "author": "Agatha Christie",
+    "genre": [
+      "Mystery",
+      "Crime Fiction"
+    ],
+    "overview": "Ten strangers are invited to a secluded island, and one by one, they are murdered. As the tension rises and suspicion grows, they must figure out who among them is the killer before it's too late.",
+    "rating": 4.4,
+    "date": 1939,
+    "tags": [
+      "Detective",
+      "Suspense",
+      "Murder Mystery"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/9264568-L.jpg",
+    "url": "https://openlibrary.org/works/OL471565W/And_Then_There_Were_None?edition=key%3A/books/OL11071785M"
+  },
+  {
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "genre": [
+      "Mystery",
+      "Thriller"
+    ],
+    "overview": "This thrilling novel follows symbologist Robert Langdon as he unravels a mystery involving a secret society, the Illuminati, and a plot to destroy Vatican City. It combines elements of history, art, and science in a race against time to save the Catholic Church.",
+    "rating": 4,
+    "date": 2000,
+    "tags": [
+      "Conspiracy",
+      "Religion",
+      "Art"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/11408194-L.jpg",
+    "url": "https://openlibrary.org/works/OL76833W/Angels_Demons?edition=key%3A/books/OL24853166M"
+  },
+  {
+    "title": "Rebecca",
+    "author": "Daphne du Maurier",
+    "genre": [
+      "Gothic Fiction",
+      "Mystery"
+    ],
+    "overview": "A young woman marries a wealthy widower, only to find herself haunted by the memory of his deceased wife, Rebecca. She becomes obsessed with uncovering the truth about Rebecca's death and faces dark secrets and unexpected twists along the way.",
+    "rating": 4.2,
+    "date": 1938,
+    "tags": [
+      "Romantic Suspense",
+      "Psychological Thriller"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/6819347-L.jpg",
+    "url": "https://openlibrary.org/works/OL36633W/Rebecca"
+  },
+  {
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "genre": [
+      "Fiction",
+      "Coming-of-Age"
+    ],
+    "overview": "Set in the 1930s in a small Southern town, this novel tells the story of Scout Finch, a young girl growing up amidst racial inequality and injustice. Through the eyes of Scout, the reader witnesses the trial of a black man accused of rape and the moral lessons learned by her father, Atticus Finch.",
+    "rating": 4.5,
+    "date": 1960,
+    "tags": [
+      "Racial Inequality",
+      "Justice",
+      "Southern Culture"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/12606567-L.jpg",
+    "url": "https://openlibrary.org/works/OL3140834W/To_Kill_a_Mockingbird?edition=key%3A/books/OL37027584M"
+  },
+  {
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "genre": [
+      "Classic",
+      "Tragedy"
+    ],
+    "overview": "Set in the Roaring Twenties, this novel follows the life of Jay Gatsby and his pursuit of the American Dream. Through the eyes of narrator Nick Carraway, the reader is immersed in the opulence, social decadence, and unfulfilled desires of the wealthy elite.",
+    "rating": 4.1,
+    "date": 1925,
+    "tags": [
+      "Wealth Inequality",
+      "Love",
+      "Illusion"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/10780935-L.jpg",
+    "url": "https://openlibrary.org/works/OL468431W/The_Great_Gatsby"
+  },
+  {
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "genre": [
+      "Fantasy",
+      "Young Adult"
+    ],
+    "overview": "The first installment of the beloved Harry Potter series introduces the magical world of Hogwarts School of Witchcraft and Wizardry. It follows the journey of Harry Potter, an orphan who discovers his true identity as a wizard and his battle against the dark wizard Lord Voldemort.",
+    "rating": 4.5,
+    "date": 1997,
+    "tags": [
+      "Magic",
+      "Friendship",
+      "Adventure"
+    ],
+    "img": "https://covers.openlibrary.org/b/id/14444481-L.jpg",
+    "url": "https://openlibrary.org/works/OL82563W/Harry_Potter_and_the_Philosopher%27s_Stone?edition=key%3A/books/OL39793700M"
   }
 ]

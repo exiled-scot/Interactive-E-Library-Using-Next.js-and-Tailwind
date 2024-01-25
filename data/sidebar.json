@@ -3,27 +3,58 @@
   "sections": [
     {
       "title": "Readers' Most Anticipated Books of January",
-      "content": [
-        ""],
+      "content": [],
       "likes": 172,
       "comments": 40
     },
     {
       "title": "Love lists?",
       "content": [
-        "The Help by Kathryn Stockett",
-        "The Kite Runner by Khaled Hosseini",
-        "Water for Elephants by Sara Gruen",
-        "The Book Thief by Markus Zusak"
+        {
+          "title": "The Help",
+          "author": "Kathryn Stockett",
+          "link": ""
+        },
+        {
+          "title": "The Kite Runner",
+          "author": "Khaled Hosseini",
+          "link": ""
+        },
+        {
+          "title": "Water for Elephants",
+          "author": "Sara Gruen",
+          "link": ""
+        },
+        {
+          "title": "The Book Thief",
+          "author": "Markus Zusak",
+          "link": ""
+        }
       ]
     },
     {
       "title": "Best for Book Clubs",
       "content": [
-        "The Girl with the Dragon Tattoo by Stieg Larsson",
-        "And Then There Were None by Agatha Christie",
-        "Angels & Demons by Dan Brown",
-        "Rebecca by Daphne du Maurier"
+        {
+          "title": "The Girl with the Dragon Tattoo",
+          "author": "Stieg Larsson",
+          "link": ""
+        },
+        {
+          "title": "And Then There Were None",
+          "author": "Agatha Christie",
+          "link": ""
+        },
+        {
+          "title": "Angels & Demons",
+          "author": "Dan Brown",
+          "link": ""
+        },
+        {
+          "title": "Rebecca",
+          "author": "Daphne du Maurier",
+          "link": ""
+        }
       ],
       "bookCount": 11978,
       "voterCount": 15895
@@ -31,10 +62,26 @@
     {
       "title": "Best Crime & Mystery Books",
       "content": [
-        "To Kill a Mockingbird by Harper Lee",
-        "1984 by George Orwell",
-        "The Great Gatsby by F. Scott Fitzgerald",
-        "Harry Potter and the Sorcerer's Stone by J.K. Rowling"
+        {
+          "title": "To Kill a Mockingbird",
+          "author": "Harper Lee",
+          "link": ""
+        },
+        {
+          "title": "1984",
+          "author": "George Orwell",
+          "link": ""
+        },
+        {
+          "title": "The Great Gatsby",
+          "author": "F. Scott Fitzgerald",
+          "link": ""
+        },
+        {
+          "title": "Harry Potter and the Sorcerer's Stone",
+          "author": "J.K. Rowling",
+          "link": ""
+        }
       ],
       "bookCount": 7046,
       "voterCount": 15481
@@ -42,7 +89,11 @@
     {
       "title": "Best Books of the 20th Century",
       "content": [
-        "More book lists"
+        {
+          "title": "More book lists",
+          "author": "",
+          "link": ""
+        }
       ],
       "bookCount": 7706,
       "voterCount": 50874
