@@ -10,7 +10,7 @@ const Sidebar = () => {
   const currentTheme = getCurrentTheme();
 
   return (
-    <div className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"} text-gray-80 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`} style={{ zIndex: 9999 }}>
+    <div className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"} text-gray-80 max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`} style={{ zIndex: 9999 }}>
       <div className="font-bold text-lg">News &amp; Interviews</div>
       <div className="my-2">Readers' Most Anticipated Books of January</div>
       <div className="my-2">Readers' Most Anticipated Books of January</div>
