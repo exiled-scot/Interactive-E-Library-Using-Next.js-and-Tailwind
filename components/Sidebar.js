@@ -8,6 +8,7 @@ const getCurrentTheme = () => {
 
 const Sidebar = ({ data }) => {
   const currentTheme = getCurrentTheme();
+  const serverRoute = typeof window !== "undefined" ? window.location.origin : "";
 
   const { title, sections, promotionText } = data;
 
@@ -23,8 +24,11 @@ const Sidebar = ({ data }) => {
           <div className="font-bold my-2">{section.title}</div>
           {section.content.map((content, contentIndex) => (
             <div key={contentIndex} className="my-2">
-              <a href={content.link} className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"
-                } italic`}>
+              <a
+                href={`${serverRoute}${content.link}`}
+                className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"
+                  } italic`}
+              >
                 {content.title}
               </a>
               <div className="inline"> by </div>
