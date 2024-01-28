@@ -8,14 +8,21 @@ const getCurrentTheme = () => {
 
 const Sidebar = ({ data }) => {
   const currentTheme = getCurrentTheme();
-  const serverRoute = typeof window !== "undefined" ? window.location.origin : "";
+  const serverRoute =
+    typeof window !== "undefined" ? window.location.origin : "";
 
   const { title, sections, promotionText } = data;
 
   return (
     <div
-      className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"
-        } text-gray-80 max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`}
+      className={`${
+        currentTheme === "dark" ? "bg-gray-800" : "bg-white"
+      } text-gray-80 max-w-[24rem] whitespace-normal break-words rounded-lg ${
+        typeof window !== "undefined" &&
+        window.innerWidth <= 640
+          ? "mx-auto"
+          : "border border-blue-gray-50"
+      } p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`}
       style={{ zIndex: 9999 }}
     >
       <div className="font-bold text-lg">{title}</div>
@@ -26,8 +33,9 @@ const Sidebar = ({ data }) => {
             <div key={contentIndex} className="my-2">
               <a
                 href={`${serverRoute}${content.link}`}
-                className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"
-                  } italic`}
+                className={`${
+                  currentTheme === "dark" ? "bg-gray-800" : "bg-white"
+                } italic`}
               >
                 {content.title}
               </a>
