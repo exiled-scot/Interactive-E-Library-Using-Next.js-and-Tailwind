@@ -13,22 +13,22 @@
         {
           "title": "The Help",
           "author": "Kathryn Stockett",
-          "link": ""
+          "link": "/book/The%20Help"
         },
         {
           "title": "The Kite Runner",
           "author": "Khaled Hosseini",
-          "link": ""
+          "link": "/book/The%20Kite%20Runner"
         },
         {
           "title": "Water for Elephants",
           "author": "Sara Gruen",
-          "link": ""
+          "link": "/book/Water%20for%20Elephants"
         },
         {
           "title": "The Book Thief",
           "author": "Markus Zusak",
-          "link": ""
+          "link": "/book/The%20Book%20Thief"
         }
       ]
     },
@@ -38,22 +38,22 @@
         {
           "title": "The Girl with the Dragon Tattoo",
           "author": "Stieg Larsson",
-          "link": ""
+          "link": "/book/The%20Girl%20with%20the%20Dragon%20Tattoo"
         },
         {
           "title": "And Then There Were None",
           "author": "Agatha Christie",
-          "link": ""
+          "link": "/book/And%20Then%20There%20Were%20None"
         },
         {
           "title": "Angels & Demons",
           "author": "Dan Brown",
-          "link": ""
+          "link": "/book/Angels%20%26%20Demons"
         },
         {
           "title": "Rebecca",
           "author": "Daphne du Maurier",
-          "link": ""
+          "link": "/book/Rebecca"
         }
       ],
       "bookCount": 11978,
@@ -65,22 +65,22 @@
         {
           "title": "To Kill a Mockingbird",
           "author": "Harper Lee",
-          "link": ""
+          "link": "/book/To%20Kill%20a%20Mockingbird"
         },
         {
           "title": "1984",
           "author": "George Orwell",
-          "link": ""
+          "link": "/book/1984"
         },
         {
           "title": "The Great Gatsby",
           "author": "F. Scott Fitzgerald",
-          "link": ""
+          "link": "/book/The%20Great%20Gatsby"
         },
         {
           "title": "Harry Potter and the Sorcerer's Stone",
           "author": "J.K. Rowling",
-          "link": ""
+          "link": "/book/Harry%20Potter%20and%20the%20Sorcerer's%20Stone"
         }
       ],
       "bookCount": 7046,
@@ -92,12 +92,12 @@
         {
           "title": "More book lists",
           "author": "",
-          "link": ""
+          "link": "/book/More%20book%20lists"
         }
       ],
       "bookCount": 7706,
       "voterCount": 50874
     }
   ],
-  "promotionText": "Are you an author or a publisher? Gain access to a massive audience of book lovers. Goodreads is a great place to promote your books."
+  "promotionText": "Are you an author or a publisher? Gain access to a massive audience of book lovers."
 }
