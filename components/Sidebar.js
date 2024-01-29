@@ -12,11 +12,13 @@ const Sidebar = ({ data }) => {
 
   const { title, sections, promotionText } = data;
 
+  // Check if the screen is too narrow
+  const isNarrowScreen = typeof window !== "undefined" && window.innerWidth < 768;
+
   return (
     <div
       className={`${currentTheme === "dark" ? "bg-gray-800" : "bg-white"
-        } text-gray-80 max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`}
-      style={{ zIndex: 9999 }}
+        } hidden xl:inline-block text-gray-80 max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none max-w-xs bg-gray-100 p-4`}
     >
       <div className="font-bold text-lg">{title}</div>
       {sections.map((section, index) => (
