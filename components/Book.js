@@ -82,7 +82,7 @@ const Book = ({ book }) => {
         {/* Popup component */}
         {showPopup && (
           <div
-            className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} hidden sm:block min-h-fit bottom-0 z-10 text-gray-800 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none right-0 mt-[-4rem] w-full h-auto sm:w-[24rem] sm:h-auto ${'lg:styleClassName'}`}
+            className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} hidden sm:block min-h-fit z-10 text-gray-800 fixed whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none mt-[-4rem] sm:w-[24rem]`}
             style={{ top: mousePosition.y, left: mousePosition.x }}
           >
             <h6 className="mb-2 flex items-center gap-2 font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased">
