@@ -18,7 +18,7 @@ const Reviews = ({ reviews }) => {
                                 <h3 className="mr-2 font-bold">{review.title}</h3>
                                 <StarRatings
                                     rating={review.rating}
-                                    starRatedColor="yellow-600"
+                                    starRatedColor="yellow"
                                     starDimension="20px"
                                     starSpacing="2px"
                                 />
