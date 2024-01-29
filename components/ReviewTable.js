@@ -59,7 +59,7 @@ const ReviewTable = ({ reviews }) => {
                 <p style={{ marginLeft: "10px", marginBottom: "0" }}>{starRatingCounts['2']} reviews</p>
             </div>
             <div style={{ display: "flex", alignItems: "center" }}>
-                <p style={{ marginRight: "10px", marginBottom: "0" }}>1 star &nbsp;</p>
+                <p style={{ marginRight: "10px", marginBottom: "0" }}>1 star&nbsp;&nbsp;</p>
                 <div style={{ width: `${maxLength}px`, height: "1rem", backgroundColor: "gray", marginBottom: "2px", border: "1px solid black", borderRadius: "5px" }}>
                     <div style={{ width: `${lengths['1']}px`, height: "100%", backgroundColor: "yellow", border: "1px solid black", borderRadius: "5px" }}></div>
                 </div>
