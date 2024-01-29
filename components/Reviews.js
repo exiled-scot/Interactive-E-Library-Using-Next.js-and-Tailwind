@@ -4,7 +4,7 @@ import ReviewTable from "./ReviewTable";
 
 const Reviews = ({ reviews }) => {
   // Check if reviews prop exists and is an array, or else assign an empty array
-  const reviewsArray = Array.isArray(reviews?.reviews) ? reviews.reviews : [];
+  const reviewsArray = Array.isArray(reviews) ? reviews : [];
 
   return (
     <div>

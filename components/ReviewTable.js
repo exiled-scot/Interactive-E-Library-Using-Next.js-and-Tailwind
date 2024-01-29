@@ -9,8 +9,8 @@ const ReviewTable = ({ reviews }) => {
     1: 0,
   };
 
-  if (reviews?.reviews?.length > 0) {
-    reviews.reviews.forEach((review) => {
+  if (reviews?.length > 0) {
+    reviews.forEach((review) => {
       const starRating = Math.round(review.rating);
       starRatingCounts[starRating]++;
     });
@@ -35,9 +35,9 @@ const ReviewTable = ({ reviews }) => {
         >
           <div
             style={{
-              width: `${reviews && reviews.reviews && reviews.reviews.length > 0 ? (starRatingCounts[rating] / maxCount) * maxLength : "100%"}px`,
+              width: `${reviews && reviews.length > 0 ? (starRatingCounts[rating] / maxCount) * maxLength : "100%"}px`,
               height: "100%",
-              backgroundColor: `${reviews && reviews.reviews && reviews.reviews.length > 0 ? "yellow" : "gray"}`,
+              backgroundColor: `${reviews && reviews.length > 0 ? "yellow" : "gray"}`,
               border: "1px solid black",
               borderRadius: "5px",
             }}

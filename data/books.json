@@ -7,13 +7,21 @@
       "Dystopia"
     ],
     "overview": "In a future where water is scarce and controlled by corrupt figures, three individuals fight for their own survival and for others.",
-    "rating": 4.5,
+    "rating": 4,
     "date": 2015,
     "tags": [
       "Southwestern United States"
     ],
     "img": "https://ia802607.us.archive.org/view_archive.php?archive=/31/items/l_covers_0010/l_covers_0010_55.zip&file=0010555079-L.jpg",
-    "url": "https://openlibrary.org/works/OL17849707W/The_Water_Knife?edition=key%3A/books/OL29128049M"
+    "url": "https://openlibrary.org/works/OL17849707W/The_Water_Knife?edition=key%3A/books/OL29128049M",
+    "reviews": [
+      {
+        "title": "Great course",
+        "rating": 4,
+        "author": "John Doe",
+        "description": "This course was really helpful and informative. I highly recommend it."
+      }
+    ]
   },
   {
     "title": "The Road",
