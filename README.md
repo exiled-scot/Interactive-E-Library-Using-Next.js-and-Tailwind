@@ -10,19 +10,25 @@ This project is an interactive E-library web application built using Next.js and
 - Next.js
 - Tailwind
 
+## Interactive E-Library
+
+<div>
+  <img src="./screenshots/screenshot1.png" alt="Image 1" style="display:inline-block; width:50%;">
+  <img src="./screenshots/screenshot2.png" alt="Image 2" style="display:inline-block; width:50%;">
+</div>
+
 ## Installation
 
-I run my projects in a NixOS development environment. This means fewer issues with old dependencies and a simpler development lifecycle.
-
+Install nodejs20 and run the app:
 ``` sh
-nix-shell -p nodejs_20
-npm install
-npm run dev
+yarn dev
 ```
 
-## Prerequisites
+The app will start on localhost:3000 (by default).
 
-- A good understanding of Javascript, including ES6 features like arrow functions and array handling
-- Basic understanding of React
-- Basic understanding of Next.js
-- Basic understanding of Tailwind
+## Goal
+I am trying to demonstrate and build upon a small NextJS project and demonstrate an understanding of the following:
+- Javascript, including ES6 features like arrow functions and array handling
+- React
+- Next.js
+- Tailwind
