@@ -79,7 +79,7 @@ const Book = ({ book }) => {
         </a>
 
         {showPopup && (
-          <div className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} bottom-0 sm:top-auto sm:bottom-auto z-10 text-gray-800 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none right-0 mt-[-4rem] w-full h-auto sm:w-[24rem] sm:h-auto`}>
+          <div className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} bottom-0 z-10 text-gray-800 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none right-0 mt-[-4rem] w-full h-auto sm:w-[24rem] sm:h-auto`}>
             {/* Title Info */}
             <h6 className="mb-2 flex items-center gap-2 font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased">
               <span><a href={book.url}>{book.title}</a></span> •
