@@ -4,8 +4,34 @@ import Head from "next/head";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
 import { useRouter } from "next/router";
+import Reviews from "../../../components/Reviews";
 
 const Book = () => {
+
+  const reviews = {
+    reviews: [
+      {
+        title: "Great course",
+        rating: 4,
+        author: "John Doe",
+        description: "This course was really helpful and informative. I highly recommend it.",
+      },
+      {
+        title: "Great course",
+        rating: 4,
+        author: "John Doe",
+        description: "This course was really helpful and informative. I highly recommend it.",
+      },
+
+      {
+        title: "Well-explained content",
+        rating: 5,
+        author: "Jane Smith",
+        description: "The instructor did a fantastic job explaining complex concepts in an easy-to-understand manner.",
+      },
+    ],
+  };
+
   const router = useRouter();
   const { title } = router.query;
   const [book, setBook] = useState(null);
@@ -66,7 +92,7 @@ const Book = () => {
                 {/* Right column - Image */}
                 <div className="md:order-1">
                   <img className="w-full" src={book?.img} alt="Book Cover" />
-                  <br/>
+                  <br />
                 </div>
 
                 {/* Left column - Text */}
@@ -112,6 +138,7 @@ const Book = () => {
                 </div>
               </div>
             </div>
+            <Reviews reviews={reviews} />
           </div>
         </div>
       )}
