@@ -10,10 +10,13 @@ const ReviewTable = ({ reviews }) => {
         1: 0,
     };
 
-    reviews.reviews.forEach((review) => {
-        const starRating = Math.round(review.rating);
-        starRatingCounts[starRating]++;
-    });
+    // Check if the reviews prop is defined
+    if (reviews && reviews.reviews) {
+        reviews.reviews.forEach((review) => {
+            const starRating = Math.round(review.rating);
+            starRatingCounts[starRating]++;
+        });
+    }
 
     const maxCount = Math.max(...Object.values(starRatingCounts));
     const maxLength = 0.2 * window.innerWidth;
@@ -71,3 +74,4 @@ const ReviewTable = ({ reviews }) => {
 };
 
 export default ReviewTable;
+

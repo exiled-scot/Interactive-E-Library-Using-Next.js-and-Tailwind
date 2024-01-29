@@ -8,29 +8,6 @@ import Reviews from "../../../components/Reviews";
 import Custom404 from "../../404";
 
 const Book = () => {
-  const reviews = {
-    reviews: [
-      {
-        title: "Great course",
-        rating: 4,
-        author: "John Doe",
-        description: "This course was really helpful and informative. I highly recommend it.",
-      },
-      {
-        title: "Great course",
-        rating: 4,
-        author: "John Doe",
-        description: "This course was really helpful and informative. I highly recommend it.",
-      },
-      {
-        title: "Well-explained content",
-        rating: 5,
-        author: "Jane Smith",
-        description: "The instructor did a fantastic job explaining complex concepts in an easy-to-understand manner.",
-      },
-    ],
-  };
-
   const router = useRouter();
   const { title } = router.query;
   const [book, setBook] = useState(null);
@@ -137,7 +114,7 @@ const Book = () => {
               </div>
             </div>
             <br />
-            <Reviews reviews={reviews} />
+            <Reviews reviews={book.reviews || []} />
           </div>
         </div>
       ) : (
