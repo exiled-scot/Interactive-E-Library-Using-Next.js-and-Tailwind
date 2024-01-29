@@ -104,6 +104,32 @@ const Book = ({ book }) => {
             </div>
           </div>
         )}
+        {/* Small screen popup component */}
+        {showPopup && (
+          <div
+            className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} hidden sm:block min-h-fit z-10 text-gray-800 fixed whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none mt-[-4rem] sm:w-[24rem]`}
+            style={{ top: mousePosition.y, left: mousePosition.x }}
+          >
+            <h6 className="mb-2 flex items-center gap-2 font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased">
+              <span><a href={book.url}>{book.title}</a></span> •
+              <a className="text-sm text-blue-gray-700" href="#">
+                {book.free ? 'Free' : 'Paid'}
+              </a>
+            </h6>
+
+            {/* Description */}
+            <p className="block font-sans text-sm font-normal leading-normal text-gray-800 antialiased">
+              {book.overview}
+            </p>
+
+            {/* Location and Material Tailwind */}
+            <div className="mt-6 flex items-center gap-8 border-t border-blue-gray-50 pt-4">
+              <p className="flex items-center gap-1 font-sans text-xs font-normal text-gray-700 antialiased"></p>
+              <span>{book.author}</span>
+            </div>
+          </div>
+        )}
+
       </div>
     </div>
   );
