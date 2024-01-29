@@ -8,15 +8,17 @@ const getCurrentTheme = () => {
 
 const Book = ({ book }) => {
   const currentTheme = getCurrentTheme();
-  const [imgError, setImgError] = useState(false); // State to track if there is an error loading the image
-  const [showPopupDelayed, setShowPopupDelayed] = useState(false); // State to control delayed display of the popup
-  const [showPopup, setShowPopup] = useState(false); // State to control the visibility of the popup
-  const bookCardRef = useRef(null); // Ref to the book card container element
+  const [imgError, setImgError] = useState(false);
+  const [showPopupDelayed, setShowPopupDelayed] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const bookCardRef = useRef(null);
 
-  // Function to handle mouse enter event
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (event) => {
+    setMousePosition({ x: event.clientX, y: event.clientY });
     setShowPopupDelayed(true);
   };
+
 
   // Function to handle mouse leave event
   const handleMouseLeave = (e) => {
@@ -78,9 +80,13 @@ const Book = ({ book }) => {
           )}
         </a>
 
+        {/* Popup component */}
         {showPopup && (
-          <div className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} bottom-0 z-10 text-gray-800 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none right-0 mt-[-4rem] w-full h-auto sm:w-[24rem] sm:h-auto`}>
-            {/* Title Info */}
+          <div
+            className={`popup ${currentTheme === 'dark' ? 'bg-gray-800' : 'bg-white'} min-h-fit bottom-0 z-10 text-gray-800 fixed max-w-[24rem] whitespace-normal break-words rounded-lg border border-blue-gray-50 p-4 font-sans text-sm font-normal text-blue-gray-500 shadow-lg shadow-blue-gray-500/10 focus:outline-none right-0 mt-[-4rem] w-full h-auto sm:w-[24rem] sm:h-auto`}
+            style={{ top: mousePosition.y, left: mousePosition.x }}
+          >
+
             <h6 className="mb-2 flex items-center gap-2 font-sans text-base font-medium leading-relaxed tracking-normal text-blue-gray-900 antialiased">
               <span><a href={book.url}>{book.title}</a></span> •
               <a className="text-sm text-blue-gray-700" href="#">
