@@ -12,10 +12,10 @@ This project is an interactive E-library web application built using Next.js and
 
 ## Interactive E-Library
 
-<div>
-  <img src="./screenshots/screenshot1.png" alt="Image 1" style="display:inline-block; width:50%;">
-  <img src="./screenshots/screenshot2.png" alt="Image 2" style="display:inline-block; width:50%;">
-</div>
+| Mobile View | Web View |
+|---------|---------|
+| ![Mobile View](./screenshots/screenshot1.png) | ![Web View](./screenshots/screenshot2.png) |
+
 
 ## Installation
 
