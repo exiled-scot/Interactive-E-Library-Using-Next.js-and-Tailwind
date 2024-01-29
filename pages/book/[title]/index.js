@@ -138,6 +138,7 @@ const Book = () => {
                 </div>
               </div>
             </div>
+            <br/>
             <Reviews reviews={reviews} />
           </div>
         </div>

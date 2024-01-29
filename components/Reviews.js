@@ -10,6 +10,7 @@ const Reviews = ({ reviews }) => {
             <div className="mx-4">
                 <h2 className="text-2xl font-bold">Reviews</h2>
                 <ReviewTable reviews={reviews} />
+                <br/>
                 <ul>
                     {reviewsArray?.map((review, index) => (
                         <li key={index}>
