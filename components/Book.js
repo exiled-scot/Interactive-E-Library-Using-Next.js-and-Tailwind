@@ -71,7 +71,7 @@ const Book = ({ book }) => {
         <a href={`/book/${encodeURIComponent(book.title)}`}>
           {!imgError && (
             <img
-              className={`sm:gap-2 transform hover:scale-110 rounded-t-lg object-contain w-full h-full md:h-96 md:w-48 sm:h-48 sm:w-48`}
+              className={`sm:gap-2 transform hover:scale-110 rounded-t-lg object-contain w-full h-full md:h-96 sm:h-48 sm:w-48`}
               src={book.img}
               onError={handleImageError}
               style={{ backgroundImage: 'none', objectFit: 'fill', display: 'block' }}
